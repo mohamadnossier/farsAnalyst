@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_fn.R
 \name{fars_read}
 \alias{fars_read}
-\title{Read data}
+\title{Read data #}
 \usage{
 fars_read(filename)
 }

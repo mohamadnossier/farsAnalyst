@@ -1,0 +1,52 @@
+---
+title: "An Overview of the Fatality Analysis Reporting System Analysis Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{model_details}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE, echo = FALSE}
+library(farsAnalyst)
+library(dplyr)
+```
+
+This vignette provides a concise overview of the farsAnalyst package functionalities. The functions provided in this package will be using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+```{r setup}
+library(farsAnalyst)
+```
+
+## Main functionalities
+
+There are three functionalities available for users to use:
+
+### 1) Read data
+
+This function reads comma separated value formatted dataset and returns it as an R dataframe table.
+
+```{r farsAnalyst_read}
+#filename <- system.file("extdata/accident_2014.csv.bz2", package = "farsAnalyst")
+#fars_read(filename)
+```
+
+### 2) Summarize data
+
+This function generates a summary of the monthly number of accidents for each month in the given number of years.
+
+```{r farsAnalyst_summarize}
+#setwd(system.file("extdata", package = "farsAnalyst"))
+#fars_summarize_years(2013:2015)
+```
+
+### 3) Plot data
+
+Plot a map displaying all accidents previously recorded in the provided state number and year.
+
+```{r farsAnalyst_map_state_example}
+#setwd(system.file("extdata", package = "farsAnalyst"))
+#fars_map_state(43, 2014)
+```
+
+Please make sure that the data file is in the working directory.
