@@ -4,7 +4,8 @@ farsAnalyst
 ===========
 
 <!-- badges: start -->
-<!-- badges: end -->
+[![Travis build status](https://travis-ci.com/mohamadnossier/farsAnalyst.svg?branch=master)](https://travis-ci.com/mohamadnossier/farsAnalyst) <!-- badges: end -->
+
 The goal of farsAnalyst is to ...
 
 Installation
